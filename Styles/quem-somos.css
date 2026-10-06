@@ -1,0 +1,2220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #075398;
+    --azul-escuro: #07518f;
+    --azul-claro: #159ed1;
+    --verde: #36a62d;
+    --verde-claro: #8bcf48;
+    --laranja: #f6a51b;
+    --vermelho: #e5264f;
+    --roxo: #75439a;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+
+    background-image:
+        url('/Assets/Img/IevFundo.png'),
+        url('/Assets/Img/ievFundo2.png');
+
+    background-size:
+        100% auto,
+        100% auto;
+
+    background-position:
+        top center,
+        100% center;
+
+    background-repeat:
+        repeat-y,
+        repeat-y;
+
+    background-attachment: scroll;
+
+    background-color: #ffffff;
+
+    color: #124b83;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: left;
+}
+
+.container {
+    width: min(1500px, calc(100% - 36px));
+    margin: 0 auto;
+}
+
+/* =========================
+    CABEÇALHO
+========================= */
+
+
+.topo {
+    background: transparent;
+     position: relative;
+    z-index: 10;
+}
+
+.topo-principal {
+    min-height: 104px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.marca {
+    width: 110px;
+    flex: 0 0 110px;
+}
+
+.marca img {
+    display: block;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.instituto {
+    border-right: 2px solid #174d82;
+    padding-right: 28px;
+    min-width: 315px;
+}
+
+.instituto h1 {
+    font-size: 25px;
+    line-height: 1.05;
+    color: #124c83;
+    font-weight: 700;
+}
+
+.instituto span {
+    font-size: 17px;
+    color: #124c83;
+}
+
+.slogan {
+    font-size: 11px;
+    line-height: 1.25;
+    color: #15528a;
+    min-width: 215px;
+}
+
+.slogan strong {
+    font-weight: 700;
+}
+
+.contato-topo {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 11px;
+    color: #164f87;
+    white-space: nowrap;
+}
+
+.contato-topo i {
+    margin-right: 6px;
+    color: #154e85;
+}
+
+.busca {
+    width: 220px;
+    height: 36px;
+    border: 1px solid #c9c9c9;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.busca input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 0 14px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+.busca button {
+    border: 0;
+    background: transparent;
+    color: #145286;
+    padding: 0 13px;
+    cursor: pointer;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 17px;
+}
+
+.menu-item {
+    height: 46px;
+    padding: 0 25px;
+    border-radius: 28px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    transition: transform .2s ease, filter .2s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    filter: brightness(.96);
+}
+
+.menu-item i {
+    font-size: 19px;
+}
+
+.verde { background: #35a82f; }
+.azul { background: #159dd0; }
+.laranja { background: #f4a21a; }
+.vermelho { background: #e7254c; }
+.verde2 { background: #39a92f; }
+.azul2 { background: #13a3d5; }
+.azul3 { background: #155a92; }
+.roxo { background: #6a1d9a; }
+.roxo2 { background: #4e1373; }
+
+/* MENU HAMBURGER */
+.menu-hamburger {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.menu-hamburger img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================================
+   BOTÕES DO MENU
+========================================= */
+
+.menu-item {
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    padding: 0 28px;
+
+    border-radius: 28px;
+
+    text-decoration: none;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: .2s ease;
+}
+
+.menu-item i {
+    font-size: 18px;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+
+/* Cores */
+
+.inicio {
+    background: #28ae42;
+}
+
+.quem-somos {
+    background: #168fd0;
+}
+
+.servicos {
+    background: #f39a17;
+}
+
+.projetos {
+    background: #ed3545;
+}
+
+.eventos {
+    background: #39ad3b;
+}
+
+.galeria {
+    background: #18a7d2;
+}
+
+.transparencia {
+    background: #0c5793;
+}
+
+.contato {
+    background: #7e35ae;
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+.conteudo {
+    width: 100%;
+    min-height: 625px;
+
+    display: flex;
+    position: relative;
+
+    padding: 25px 10% 80px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   SEÇÃO TEXTO
+========================================= */
+
+.sobre {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    padding-top: 15px;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.titulo {
+    display: flex;
+    align-items: center;
+
+    height: 70px;
+
+    position: relative;
+}
+
+.titulo h2 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    color: #064d8d;
+
+    font-size: 49px;
+    font-weight: 800;
+
+    font-style: italic;
+
+    margin-left: 12px;
+}
+
+
+/* coração do título */
+
+.icone-coracao {
+    width: 48px;
+    height: 48px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-coracao i {
+    color: #0d5791;
+    font-size: 44px;
+    transform: rotate(-12deg);
+}
+
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.texto {
+    width: 625px;
+
+    margin-top: 3px;
+
+    color: #245b89;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    line-height: 1.38;
+}
+
+.texto p {
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   LINHA COLORIDA
+========================================= */
+
+.linha-colorida {
+    width: 205px;
+    height: 8px;
+
+    display: flex;
+
+    margin-top: -5px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.linha-colorida span {
+    display: block;
+    height: 100%;
+}
+
+.linha-colorida .azul {
+    width: 28%;
+    background: #1299d5;
+}
+
+.linha-colorida .vermelho {
+    width: 28%;
+    background: #ed3944;
+}
+
+.linha-colorida .verde {
+    width: 25%;
+    background: #3baa40;
+}
+
+.linha-colorida .amarelo {
+    width: 19%;
+    background: #f3c72e;
+}
+
+
+/* =========================================
+   IMAGEM
+========================================= */
+
+.imagem-area {
+    width: 50%;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 30px;
+}
+
+
+/* =========================================
+   FORMA ORGÂNICA DA FOTO
+========================================= */
+
+.imagem-forma {
+    width: 660px;
+    height: 475px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius:
+        120px
+        130px
+        105px
+        95px / 
+        90px
+        75px
+        100px
+        110px;
+}
+
+.imagem-forma img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+/* =========================================
+   DECORAÇÃO - TRAÇOS
+========================================= */
+
+.tracos {
+    position: absolute;
+
+    right: -5px;
+    top: 30px;
+
+    width: 90px;
+    height: 90px;
+}
+
+.traco {
+    position: absolute;
+
+    width: 13px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    transform-origin: bottom center;
+}
+
+.traco-1 {
+    background: #58b63f;
+    right: 55px;
+    top: 4px;
+    transform: rotate(13deg);
+}
+
+.traco-2 {
+    background: #f8b21c;
+    right: 28px;
+    top: 18px;
+    transform: rotate(40deg);
+}
+
+.traco-3 {
+    background: #ee3345;
+    right: 2px;
+    top: 43px;
+    transform: rotate(57deg);
+}
+
+.traco-4 {
+    background: #179bd1;
+    right: 67px;
+    top: 25px;
+    transform: rotate(-25deg);
+}
+
+
+/* =========================================
+   CORAÇÃO DIREITO
+========================================= */
+
+.coracao-direita {
+    position: absolute;
+
+    right: 20px;
+    bottom: 35px;
+
+    color: #a8d87d;
+
+    font-size: 80px;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   DECORAÇÃO ESQUERDA
+========================================= */
+
+.decoracao-esquerda {
+    position: absolute;
+
+    left: -45px;
+    top: 110px;
+
+    width: 130px;
+    height: 300px;
+
+    opacity: .65;
+}
+
+.folha {
+    position: absolute;
+
+    width: 70px;
+    height: 35px;
+
+    border-radius: 100% 0 100% 0;
+
+    transform: rotate(-35deg);
+}
+
+.folha-verde {
+    background: #b5d989;
+
+    left: 0;
+    top: 0;
+}
+
+.folha-azul {
+    background: #c9e9c4;
+
+    left: 5px;
+    top: 48px;
+
+    transform: rotate(35deg);
+}
+
+.circulo-amarelo {
+    position: absolute;
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    background: #f5ddb1;
+
+    left: 45px;
+    top: 190px;
+}
+
+
+/* =========================================
+   ONDA INFERIOR
+========================================= */
+
+.onda {
+    width: 100%;
+    height: 115px;
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+.onda-azul {
+    position: absolute;
+
+    width: 110%;
+    height: 130px;
+
+    left: -5%;
+    bottom: -80px;
+
+    background: #edf6fc;
+
+    border-radius: 50% 50% 0 0 / 70% 70% 0 0;
+
+    transform: rotate(-1deg);
+}
+
+.onda-verde {
+    position: absolute;
+
+    width: 110%;
+    height: 110px;
+
+    left: -4%;
+    bottom: -100px;
+
+    background: #eff8e5;
+
+    border-radius: 50% 50% 0 0 / 80% 80% 0 0;
+
+    transform: rotate(2deg);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1250px) {
+
+    .cabecalho {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .nome-instituto h1 {
+        font-size: 21px;
+    }
+
+    .nome-instituto span {
+        font-size: 13px;
+    }
+
+    .frase {
+        display: none;
+    }
+
+    .menu-item {
+        padding: 0 18px;
+    }
+
+    .conteudo {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .texto {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .imagem-forma {
+        width: 100%;
+        height: 430px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        height: auto;
+        min-height: 90px;
+        flex-wrap: wrap;
+    }
+
+    .informacoes {
+        display: none;
+    }
+
+    .pesquisa {
+        display: none;
+    }
+
+    .menu {
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        height: 42px;
+        padding: 0 18px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        padding: 30px 8% 100px;
+    }
+
+    .sobre {
+        width: 100%;
+    }
+
+    .imagem-area {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .imagem-forma {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .titulo h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .logo-area {
+        width: 80px;
+    }
+
+    .logo-area img {
+        width: 70px;
+    }
+
+    .nome-instituto {
+        width: auto;
+    }
+
+    .nome-instituto h1 {
+        font-size: 18px;
+    }
+
+    .nome-instituto span {
+        font-size: 11px;
+    }
+
+    .separador {
+        display: none;
+    }
+
+    .menu-item {
+        width: 45%;
+        font-size: 11px;
+        gap: 7px;
+        padding: 0 8px;
+    }
+
+    .titulo h2 {
+        font-size: 34px;
+    }
+
+    .icone-coracao i {
+        font-size: 35px;
+    }
+
+    .texto {
+        font-size: 13px;
+    }
+
+    .imagem-forma {
+        height: 300px;
+    }
+
+    .coracao-direita {
+        right: 0;
+        bottom: 5px;
+    }
+}
+
+/* =========================================================
+   ORGANOGRAMA / NOSSA EQUIPE
+========================================================= */
+
+.equipe-section {
+    width: 100%;
+    position: relative;
+    padding: 90px 8% 110px;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TÍTULOS DAS SESSÕES
+========================================================= */
+
+.equipe-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    text-align: center;
+}
+
+.titulo-icone {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf5fc;
+    border-radius: 50%;
+
+    color: #12649a;
+    font-size: 25px;
+
+    transform: rotate(-5deg);
+}
+
+.titulo-icone.verde-icone {
+    background: #edf8e6;
+    color: #4ca63d;
+}
+
+.titulo-pequeno {
+    display: block;
+
+    color: #5c9c55;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    margin-bottom: 3px;
+}
+
+.equipe-titulo h2 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    font-size: 44px;
+    line-height: 1;
+
+    color: #064d8d;
+
+    font-style: italic;
+    font-weight: 800;
+}
+
+.titulo-detalhe {
+    display: block;
+
+    width: 90px;
+    height: 5px;
+
+    border-radius: 10px;
+}
+
+.detalhe-azul {
+    background: #159bd2;
+}
+
+.detalhe-verde {
+    background: #56ad3e;
+}
+
+.detalhe-laranja {
+    background: #f39b1c;
+}
+
+.equipe-subtitulo {
+    max-width: 700px;
+
+    margin: 18px auto 55px;
+
+    text-align: center;
+
+    color: #527695;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CARD DE PESSOA — GESTÃO
+========================================================= */
+
+.pessoa-card {
+    min-height: 92px;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(20, 83, 130, .10);
+
+    box-shadow:
+        0 8px 25px rgba(35, 87, 120, .10);
+
+    padding: 15px 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    position: relative;
+
+    transition: .25s ease;
+}
+
+.pessoa-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 13px 30px rgba(35, 87, 120, .15);
+}
+
+
+.pessoa-icone {
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 17px;
+
+    background: #e7f4fc;
+
+    color: #0d75ae;
+
+    font-size: 21px;
+}
+
+.pessoa-icone.azul {
+    background: #e7f5fc;
+    color: #168dca;
+}
+
+.pessoa-icone.verde {
+    background: #edf8e7;
+    color: #55a942;
+}
+
+.pessoa-icone.laranja {
+    background: #fff2df;
+    color: #ef9717;
+}
+
+.pessoa-icone.vermelho {
+    background: #ffebed;
+    color: #e94351;
+}
+
+.pessoa-icone.amarelo {
+    background: #fff8d9;
+    color: #dba814;
+}
+
+
+.pessoa-info {
+    text-align: left;
+}
+
+.cargo {
+    display: block;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    color: #5c91b3;
+
+    letter-spacing: .8px;
+
+    margin-bottom: 5px;
+}
+
+.pessoa-info h3 {
+    color: #174e7c;
+
+    font-size: 15px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DIRETORA
+========================================================= */
+
+.organograma-gestao {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.card-diretora {
+    width: 330px;
+
+    border: 2px solid #168fc9;
+
+    padding: 18px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 65%,
+            #eff9fd
+        );
+}
+
+.card-diretora .pessoa-icone {
+    background: #168fc9;
+    color: white;
+}
+
+.card-diretora .cargo {
+    color: #1381b9;
+}
+
+
+/* =========================================================
+   CONECTORES DA GESTÃO
+========================================================= */
+
+.linha-vertical {
+    width: 3px;
+
+    background: #bddbe9;
+
+    border-radius: 10px;
+}
+
+.linha-diretora {
+    height: 38px;
+}
+
+.gestao-conjunto {
+    width: 100%;
+
+    position: relative;
+}
+
+.linha-horizontal {
+    width: calc(100% - 190px);
+
+    height: 3px;
+
+    background: #bddbe9;
+
+    border-radius: 10px;
+
+    margin: 0 auto;
+}
+
+.gestao-colunas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+    width: 100%;
+
+    padding: 0 15px;
+}
+
+.gestao-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha-vertical-pequena {
+    height: 25px;
+    width: 3px;
+
+    background: #bddbe9;
+
+    border-radius: 10px;
+}
+
+.gestao-item .pessoa-card {
+    width: 100%;
+}
+
+
+/* =========================================================
+   SECRETARIA
+========================================================= */
+
+.secretaria-linha {
+    height: 35px;
+    margin-top: 4px;
+}
+
+.secretaria-titulo {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 28px;
+
+    border-radius: 20px;
+
+    background: #fff;
+
+    box-shadow: 0 7px 22px rgba(40, 80, 100, .08);
+
+    border: 1px solid #f1e0e0;
+}
+
+.secretaria-titulo .pessoa-icone {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+}
+
+.secretaria-titulo h3 {
+    color: #174e7c;
+    font-size: 15px;
+}
+
+.secretarias {
+    width: 75%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 25px;
+
+    position: relative;
+}
+
+.secretarias::before {
+    content: "";
+
+    position: absolute;
+
+    top: -14px;
+
+    left: 25%;
+    right: 25%;
+
+    height: 2px;
+
+    background: #e3d4d4;
+}
+
+
+/* =========================================================
+   SESSÃO FUNCIONÁRIOS
+========================================================= */
+
+.funcionarios-section {
+    background:
+        radial-gradient(
+            circle at 5% 15%,
+            rgba(232, 246, 226, .8),
+            transparent 180px
+        ),
+        radial-gradient(
+            circle at 95% 85%,
+            rgba(229, 244, 252, .8),
+            transparent 200px
+        ),
+    transparent;
+
+    border-top:
+        1px solid #edf3ed;
+}
+
+
+/* =========================================================
+   GRUPOS
+========================================================= */
+
+.grupo-equipe {
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    background: rgba(255,255,255,.95);
+
+    border-radius: 28px;
+
+    padding: 28px;
+
+    border: 1px solid rgba(40, 100, 120, .08);
+
+    box-shadow:
+        0 8px 28px rgba(40, 90, 110, .07);
+
+    position: relative;
+}
+
+.grupo-equipe::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 25px;
+    bottom: 25px;
+
+    width: 5px;
+
+    border-radius: 0 10px 10px 0;
+
+    background: #168fc9;
+}
+
+
+/* Cores dos grupos */
+
+.grupo-psicologia::before {
+    background: #168fc9;
+}
+
+.grupo-psicopedagogia::before {
+    background: #58a942;
+}
+
+.grupo-arteterapia::before {
+    background: #f39a17;
+}
+
+.grupo-educacao-fisica::before {
+    background: #18a6d1;
+}
+
+
+.grupo-cabecalho {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+    padding-left: 8px;
+}
+
+.grupo-icone {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e9f5fc;
+
+    color: #168ac3;
+
+    font-size: 22px;
+}
+
+.grupo-cabecalho span {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 800;
+
+    color: #73a0b8;
+}
+
+.grupo-cabecalho h3 {
+    color: #174e7c;
+
+    font-size: 23px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   GRID DE PESSOAS
+========================================================= */
+
+.pessoas-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.funcionario-card {
+    min-height: 88px;
+
+    background: #fff;
+
+    border-radius: 18px;
+
+    border: 1px solid #e8eff2;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow:
+        0 4px 12px rgba(30, 80, 100, .05);
+
+    transition: .2s ease;
+}
+
+.funcionario-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 20px rgba(30, 80, 100, .10);
+}
+
+.funcionario-card .cargo {
+    margin-bottom: 7px;
+
+    font-size: 9px;
+
+    color: #73a0b8;
+}
+
+.funcionario-card strong {
+    color: #20577f;
+
+    font-size: 13px;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   SUBGRUPOS
+========================================================= */
+
+.subgrupos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.subgrupo {
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: #fafdfb;
+
+    border: 1px dashed #dce9df;
+}
+
+.subgrupo h4 {
+    color: #477b58;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.subgrupo .pessoas-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* =========================================================
+   GRUPOS PEQUENOS
+========================================================= */
+
+.grupos-pequenos {
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.grupo-mini {
+    background: #fff;
+
+    border-radius: 22px;
+
+    padding: 22px;
+
+    min-height: 190px;
+
+    border: 1px solid #e7eef1;
+
+    box-shadow:
+        0 7px 22px rgba(30, 80, 100, .06);
+
+    position: relative;
+}
+
+.mini-icone {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    font-size: 19px;
+}
+
+.mini-icone.azul {
+    background: #e7f5fc;
+    color: #138bc5;
+}
+
+.mini-icone.verde {
+    background: #edf8e7;
+    color: #53a440;
+}
+
+.mini-icone.laranja {
+    background: #fff1dc;
+    color: #ee9418;
+}
+
+.mini-icone.vermelho {
+    background: #ffebed;
+    color: #e3404e;
+}
+
+.mini-icone.amarelo {
+    background: #fff7d9;
+    color: #d6a515;
+}
+
+.mini-icone.azul-claro {
+    background: #e6f7fb;
+    color: #16a4c5;
+}
+
+.mini-titulo span {
+    display: block;
+
+    font-size: 9px;
+
+    color: #7b9caf;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.mini-titulo h3 {
+    color: #1c557d;
+
+    font-size: 17px;
+
+    margin-top: 4px;
+
+    margin-bottom: 15px;
+}
+
+.grupo-mini ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+.grupo-mini li {
+    color: #50748d;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    padding: 5px 0;
+
+    border-bottom: 1px solid #edf2f4;
+}
+
+.grupo-mini li:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   APOIO
+========================================================= */
+
+.apoio-equipe {
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.apoio-card {
+    background: white;
+
+    border-radius: 23px;
+
+    padding: 24px;
+
+    border: 1px solid #e7eef0;
+
+    box-shadow:
+        0 7px 22px rgba(30, 80, 100, .06);
+}
+
+.apoio-icone {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+.apoio-icone.roxo {
+    background: #f2eafa;
+    color: #7b42a6;
+}
+
+.apoio-icone.verde {
+    background: #edf8e8;
+    color: #55a341;
+}
+
+.apoio-icone.azul {
+    background: #e7f5fc;
+    color: #168bc7;
+}
+
+.apoio-card > div:nth-child(2) span {
+    display: block;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+
+    color: #7c9aaa;
+}
+
+.apoio-card h3 {
+    color: #1b547c;
+
+    font-size: 17px;
+
+    margin-top: 4px;
+
+    margin-bottom: 15px;
+}
+
+.apoio-card p,
+.apoio-card li {
+    color: #52758b;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.apoio-card ul {
+    padding-left: 17px;
+}
+
+.apoio-card li {
+    margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   DECORAÇÕES
+========================================================= */
+
+.equipe-decoracao {
+    position: absolute;
+
+    pointer-events: none;
+
+    opacity: .55;
+}
+
+.folha-equipe-1 {
+    width: 85px;
+    height: 40px;
+
+    background: #b8db8b;
+
+    border-radius: 100% 0 100% 0;
+
+    left: -25px;
+    top: 190px;
+
+    transform: rotate(35deg);
+}
+
+.folha-equipe-2 {
+    width: 65px;
+    height: 32px;
+
+    background: #d9eebd;
+
+    border-radius: 100% 0 100% 0;
+
+    right: -15px;
+    bottom: 250px;
+
+    transform: rotate(-35deg);
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .equipe-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .gestao-colunas {
+        gap: 15px;
+    }
+
+    .pessoas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grupos-pequenos,
+    .apoio-equipe {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — CELULAR
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .equipe-section {
+        padding: 65px 5% 80px;
+    }
+
+
+    /* título */
+
+    .equipe-titulo {
+        gap: 10px;
+    }
+
+    .titulo-detalhe {
+        width: 35px;
+    }
+
+    .titulo-icone {
+        width: 46px;
+        height: 46px;
+
+        font-size: 19px;
+    }
+
+    .equipe-titulo h2 {
+        font-size: 32px;
+    }
+
+
+    /* gestão */
+
+    .card-diretora {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .linha-horizontal {
+        display: none;
+    }
+
+    .gestao-colunas {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        padding: 0;
+    }
+
+    .gestao-item {
+        width: 100%;
+    }
+
+    .linha-vertical-pequena {
+        height: 22px;
+    }
+
+    .gestao-item .pessoa-card {
+        width: 100%;
+    }
+
+    .secretarias {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .secretarias::before {
+        display: none;
+    }
+
+
+    /* grupos */
+
+    .grupo-equipe {
+        padding: 22px 18px;
+    }
+
+    .grupo-cabecalho h3 {
+        font-size: 20px;
+    }
+
+    .pessoas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subgrupos {
+        grid-template-columns: 1fr;
+    }
+
+    .subgrupo .pessoas-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* cards menores */
+
+    .grupos-pequenos,
+    .apoio-equipe {
+        grid-template-columns: 1fr;
+    }
+
+
+    .equipe-subtitulo {
+        font-size: 13px;
+
+        margin-bottom: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR PEQUENO
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .equipe-titulo {
+        flex-wrap: wrap;
+    }
+
+    .titulo-detalhe {
+        display: none;
+    }
+
+    .equipe-titulo h2 {
+        font-size: 29px;
+    }
+
+    .pessoa-card {
+        padding: 13px;
+    }
+
+    .pessoa-icone {
+        width: 45px;
+        min-width: 45px;
+        height: 45px;
+    }
+
+    .pessoa-info h3 {
+        font-size: 13px;
+    }
+
+    .funcionario-card strong {
+        font-size: 12px;
+    }
+
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    margin-top: 0;
+    min-height: 150px;
+    color: #fff;
+    background:
+        radial-gradient(250px 100px at 3% 100%, #39a832 0 42%, transparent 43%),
+        radial-gradient(420px 100px at 48% 0%, #159ed1 0 42%, transparent 43%),
+        #075398;
+    position: relative;
+    overflow: hidden;
+}
+
+.rodape::before {
+    content: "";
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    top: -40px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.rodape-principal {
+    position: relative;
+    z-index: 2;
+    min-height: 150px;
+    padding-top: 52px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr .8fr .9fr;
+    align-items: center;
+}
+
+.footer-marca,
+.footer-item,
+.redes {
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-marca {
+    gap: 14px;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255,255,255,.5);
+}
+
+.footer-marca img {
+    width: 85px;
+    height: 80px;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+.footer-marca strong {
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.footer-item {
+    gap: 13px;
+    padding: 0 22px;
+    border-right: 1px solid rgba(255,255,255,.5);
+}
+
+.footer-item > i {
+    font-size: 24px;
+}
+
+.footer-item small,
+.footer-item strong {
+    display: block;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+.footer-item strong {
+    font-size: 11px;
+}
+
+.redes {
+    justify-content: center;
+    gap: 12px;
+}
+
+.redes a {
+    color: #075398;
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.frase-footer {
+    font-family: "Pacifico", cursive;
+    font-size: 15px;
+    line-height: 1.1;
+    transform: rotate(-3deg);
+    text-align: center;
+}
+
+.frase-footer span {
+    color: #f5c82e;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1250px) {
+    .contato-topo {
+        display: none;
+    }
+
+    .menu-item {
+        padding: 0 15px;
+        font-size: 11px;
+    }
+
+    .hero-texto {
+        padding-left: 70px;
+    }
+
+    .hero-texto h2 {
+        font-size: 40px;
+    }
+
+    .rodape-principal {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        row-gap: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 900px) {
+    .topo-principal {
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+
+    .instituto {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .busca {
+        margin-left: auto;
+    }
+
+    .menu {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 12px;
+    }
+
+    .menu-item {
+        flex: 0 0 auto;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .hero-conteudo {
+        flex-direction: column;
+    }
+
+    .hero-texto {
+        width: 100%;
+        min-width: 0;
+        padding: 35px;
+    }
+
+    .hero-imagem {
+        height: 330px;
+    }
+
+    .rodape-principal {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: min(100% - 20px, 1500px);
+    }
+
+    .marca {
+        width: 75px;
+        flex-basis: 75px;
+    }
+
+    .instituto h1 {
+        font-size: 18px;
+    }
+
+    .instituto span {
+        font-size: 12px;
+    }
+
+    .busca {
+        width: 100%;
+        order: 5;
+    }
+
+    .hero-texto {
+        padding: 30px 25px;
+    }
+
+    .hero-texto h2 {
+        font-size: 38px;
+    }
+
+    .hero-imagem {
+        height: 250px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 23px;
+    }
+
+    .rodape-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-marca,
+    .footer-item {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.25);
+        padding: 12px 0;
+    }
+}
+
+/* Reset básico para evitar quebras de layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal do carrossel */
+.carrossel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0 20px 40px;
+    overflow: hidden; /* Evita que os botões vazem */
+    border-radius: 50px;
+}
+
+/* Trilho do carrossel */
+.carrossel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    /* Esconde a barra de rolagem */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE e Edge */
+}
+
+.carrossel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* Slide individual */
+.carrossel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    pointer-events: none; /* Evita arrastar a imagem em si */
+}
+
+/* Botões Anterior e Próximo */
+.btn-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.btn-carrossel:hover {
+    background: rgba(0, 0, 0, 0.9);
+    }
+
+.btn-carrossel.prev { left: 10px; }
+.btn-carrossel.next { right: 10px; }
+
+/* Indicadores / Bolinhas */
+.carrossel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+.carrossel-indicadores span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carrossel-indicadores span.ativo {
+    background-color: #333;
+    transform: scale(1.3);
+}

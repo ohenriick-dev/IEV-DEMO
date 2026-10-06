@@ -1,0 +1,830 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #075398;
+    --azul-escuro: #07518f;
+    --azul-claro: #159ed1;
+    --verde: #36a62d;
+    --verde-claro: #8bcf48;
+    --laranja: #f6a51b;
+    --vermelho: #e5264f;
+    --roxo: #75439a;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+
+    background-image:
+        url('/Assets/Img/IevFundo.png'),
+        url('/Assets/Img/ievFundo2.png');
+
+    background-size:
+        100% auto,
+        100% auto;
+
+    background-position:
+        top center,
+        100% center;
+
+    background-repeat:
+        repeat-y,
+        repeat-y;
+
+    background-attachment: scroll;
+
+    background-color: #ffffff;
+
+    color: #124b83;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: left;
+}
+
+.container {
+    width: min(1500px, calc(100% - 36px));
+    margin: 0 auto;
+}
+
+/* =========================
+    CABEÇALHO
+========================= */
+
+
+.topo {
+    background: transparent;
+     position: relative;
+    z-index: 10;
+}
+
+.topo-principal {
+    min-height: 104px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.marca {
+    width: 110px;
+    flex: 0 0 110px;
+}
+
+.marca img {
+    display: block;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.instituto {
+    border-right: 2px solid #174d82;
+    padding-right: 28px;
+    min-width: 315px;
+}
+
+.instituto h1 {
+    font-size: 25px;
+    line-height: 1.05;
+    color: #124c83;
+    font-weight: 700;
+}
+
+.instituto span {
+    font-size: 17px;
+    color: #124c83;
+}
+
+.slogan {
+    font-size: 11px;
+    line-height: 1.25;
+    color: #15528a;
+    min-width: 215px;
+}
+
+.slogan strong {
+    font-weight: 700;
+}
+
+.contato-topo {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 11px;
+    color: #164f87;
+    white-space: nowrap;
+}
+
+.contato-topo i {
+    margin-right: 6px;
+    color: #154e85;
+}
+
+.busca {
+    width: 220px;
+    height: 36px;
+    border: 1px solid #c9c9c9;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.busca input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 0 14px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+.busca button {
+    border: 0;
+    background: transparent;
+    color: #145286;
+    padding: 0 13px;
+    cursor: pointer;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 17px;
+}
+
+.menu-item {
+    height: 46px;
+    padding: 0 25px;
+    border-radius: 28px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    transition: transform .2s ease, filter .2s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    filter: brightness(.96);
+}
+
+.menu-item i {
+    font-size: 19px;
+}
+
+.verde { background: #35a82f; }
+.azul { background: #159dd0; }
+.laranja { background: #f4a21a; }
+.vermelho { background: #e7254c; }
+.verde2 { background: #39a92f; }
+.azul2 { background: #13a3d5; }
+.azul3 { background: #155a92; }
+.roxo { background: #6a1d9a; }
+.roxo2 { background: #4e1373; }
+
+/* MENU HAMBURGER */
+.menu-hamburger {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.menu-hamburger img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+.galeria-banner {
+    min-height: 145px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    background:
+        radial-gradient(circle at 95% 15%, rgba(130,199,76,.40) 0 75px, transparent 76px),
+        radial-gradient(circle at 4% 90%, rgba(231,41,73,.16) 0 65px, transparent 66px),
+        linear-gradient(110deg, #07518f, #159dd0);
+}
+
+.galeria-banner::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    bottom: -75px;
+    width: 390px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(130,199,76,.28);
+}
+
+.galeria-banner-conteudo {
+    min-height: 145px;
+    padding: 25px 55px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.galeria-banner-icone {
+    width: 82px;
+    height: 82px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgba(255,255,255,.9);
+    border-radius: 22px;
+    color: #fff;
+    font-size: 39px;
+}
+
+.galeria-banner h2 {
+    margin: 0;
+    color: #fff;
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.galeria-banner p {
+    margin-top: 5px;
+    color: rgba(255,255,255,.95);
+    font-size: 14px;
+}
+
+
+/* =========================================================
+    FOTOS EM DESTAQUE
+========================================================= */
+.galeria-destaques {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.galeria-subtitulo {
+    margin-top: 5px;
+    color: #35658c;
+    font-size: 13px;
+}
+
+
+/* GRID DE FOTOS */
+.fotos-grid {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* CARD DA FOTO */
+.foto-card {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 17px;
+    background: #edf5f9;
+    border: 1px solid #deebf2;
+    box-shadow: 0 5px 17px rgba(7,81,143,.08);
+    cursor: pointer;
+}
+
+.foto-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .35s ease, filter .35s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.foto-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(7,81,143,.48);
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+
+.foto-overlay i {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #07518f;
+    background: #fff;
+    font-size: 18px;
+    transform: scale(.7);
+    transition: transform .25s ease;
+}
+
+.foto-card:hover img {
+    transform: scale(1.08);
+    filter: brightness(.85);
+}
+
+.foto-card:hover .foto-overlay {
+    opacity: 1;
+}
+
+.foto-card:hover .foto-overlay i {
+    transform: scale(1);
+}
+
+
+/* =========================================================
+    ÁLBUNS
+========================================================= */
+
+.albuns {
+    padding-bottom: 55px;
+}
+
+/* GRID DOS ÁLBUNS */
+.albuns-grid {
+    margin-top: 23px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* CARD */
+.album-card {
+    overflow: hidden;
+    display: flex;
+    min-height: 220px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #dfebf2;
+    box-shadow: 0 5px 18px rgba(7,81,143,.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(7,81,143,.13);
+}
+
+/* CAPA DO ÁLBUM */
+.album-capa {
+    width: 45%;
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+    background: #eaf4f9;
+}
+
+.album-capa img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.album-card:hover .album-capa img {
+    transform: scale(1.07);
+}
+
+/* QUANTIDADE DE FOTOS */
+.album-fotos {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 20px;
+    background: rgba(7,81,143,.88);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.album-fotos i {
+    font-size: 11px;
+}
+
+/* CONTEÚDO */
+.album-conteudo {
+    width: 55%;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* TAG */
+.album-tag {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* CORES DAS TAGS */
+.album-tag.eventos {
+    color: #b47b00;
+    background: #fff2c9;
+}
+
+.album-tag.projetos {
+    color: #d32b49;
+    background: #fde3e8;
+}
+
+.album-tag.atividades {
+    color: #2f8e2a;
+    background: #e4f4df;
+}
+
+.album-tag.comunidade {
+    color: #71439c;
+    background: #eee3f7;
+}
+
+/* TÍTULO */
+.album-conteudo h3 {
+    margin-top: 11px;
+    color: #07518f;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* DESCRIÇÃO */
+.album-conteudo p {
+    margin-top: 8px;
+    color: #66869d;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* BOTÃO */
+.album-botao {
+    margin-top: auto;
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #159dd0;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    transition: gap .2s ease;
+}
+
+.album-botao:hover {
+    gap: 14px;
+}
+
+.album-botao i {
+    font-size: 10px;
+}
+
+/* ITEM ATIVO DO MENU */
+.galeria-menu-ativo {
+    box-shadow: 0 0 0 3px rgba(21,157,208,.20), 0 3px 8px rgba(0,0,0,.12);
+}
+
+/* =========================================================
+    RESPONSIVIDADE
+========================================================= */
+@media (max-width: 900px) {
+    .fotos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .albuns-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .galeria-banner-conteudo {
+        padding: 24px;
+        gap: 15px;
+    }
+
+    .galeria-banner-icone {
+        width: 62px;
+        height: 62px;
+        border-radius: 17px;
+        font-size: 29px;
+    }
+
+    .galeria-banner h2 {
+        font-size: 29px;
+    }
+
+    .galeria-banner p {
+        font-size: 10px;
+    }
+
+    .galeria-destaques .titulo-secao h2, .albuns .titulo-secao h2 {
+        font-size: 23px;
+    }
+
+    .fotos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .foto-card {
+        height: 230px;
+    }
+
+    .album-card {
+        flex-direction: column;
+    }
+
+    .album-capa {
+        width: 100%;
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .album-conteudo {
+        width: 100%;
+        min-height: 190px;
+    }
+}
+.rodape {
+    margin-top: 0;
+    min-height: 150px;
+    color: #fff;
+    background:
+        radial-gradient(250px 100px at 3% 100%, #39a832 0 42%, transparent 43%),
+        radial-gradient(420px 100px at 48% 0%, #159ed1 0 42%, transparent 43%),
+        #075398;
+    position: relative;
+    overflow: hidden;
+}
+
+.rodape::before {
+    content: "";
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    top: -40px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.rodape-principal {
+    position: relative;
+    z-index: 2;
+    min-height: 150px;
+    padding-top: 52px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr .8fr .9fr;
+    align-items: center;
+}
+
+.footer-marca,
+.footer-item,
+.redes {
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-marca {
+    gap: 14px;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255,255,255,.5);
+}
+
+.footer-marca img {
+    width: 85px;
+    height: 80px;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+.footer-marca strong {
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.footer-item {
+    gap: 13px;
+    padding: 0 22px;
+    border-right: 1px solid rgba(255,255,255,.5);
+}
+
+.footer-item > i {
+    font-size: 24px;
+}
+
+.footer-item small,
+.footer-item strong {
+    display: block;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+.footer-item strong {
+    font-size: 11px;
+}
+
+.redes {
+    justify-content: center;
+    gap: 12px;
+}
+
+.redes a {
+    color: #075398;
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.frase-footer {
+    font-family: "Pacifico", cursive;
+    font-size: 15px;
+    line-height: 1.1;
+    transform: rotate(-3deg);
+    text-align: center;
+}
+
+.frase-footer span {
+    color: #f5c82e;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1250px) {
+    .contato-topo {
+        display: none;
+    }
+
+    .menu-item {
+        padding: 0 15px;
+        font-size: 11px;
+    }
+
+    .hero-texto {
+        padding-left: 70px;
+    }
+
+    .hero-texto h2 {
+        font-size: 40px;
+    }
+
+    .rodape-principal {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        row-gap: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 900px) {
+    .topo-principal {
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+
+    .instituto {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .busca {
+        margin-left: auto;
+    }
+
+    .menu {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 12px;
+    }
+
+    .menu-item {
+        flex: 0 0 auto;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .hero-conteudo {
+        flex-direction: column;
+    }
+
+    .hero-texto {
+        width: 100%;
+        min-width: 0;
+        padding: 35px;
+    }
+
+    .hero-imagem {
+        height: 330px;
+    }
+
+    .rodape-principal {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: min(100% - 20px, 1500px);
+    }
+
+    .marca {
+        width: 75px;
+        flex-basis: 75px;
+    }
+
+    .instituto h1 {
+        font-size: 18px;
+    }
+
+    .instituto span {
+        font-size: 12px;
+    }
+
+    .busca {
+        width: 100%;
+        order: 5;
+    }
+
+    .hero-texto {
+        padding: 30px 25px;
+    }
+
+    .hero-texto h2 {
+        font-size: 38px;
+    }
+
+    .hero-imagem {
+        height: 250px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 23px;
+    }
+
+    .rodape-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-marca,
+    .footer-item {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.25);
+        padding: 12px 0;
+    }
+}

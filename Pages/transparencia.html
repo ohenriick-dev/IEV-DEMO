@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal da Transparência - IEV</title>
+    <link rel="stylesheet" href="../Styles/transparencia.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="topo">
+        <div class="topo-principal container">
+            <a href="#" class="marca">
+                <img src="/Assets/Icons/iev-logo.png" alt="Instituto Espaço Vida">
+            </a>
+
+            <div class="instituto">
+                <h1>Instituto Espaço Vida</h1>
+                <span>de Educação, Saúde e Inclusão</span>
+            </div>
+
+            <div class="slogan">
+                <strong>Acreditamos no poder</strong>
+                do cuidado, do acolhimento<br>
+                e das oportunidades.
+            </div>
+
+            <div class="contato-topo">
+                <span><i class="fa-solid fa-phone"></i> ievvitoriaipe@gmail.com</span>
+                <span><i class="fa-solid fa-location-dot"></i> Vitória de Santo Antão - PE</span>
+            </div>
+
+            <div class="busca">
+                <input type="text" placeholder="Pesquisar no site...">
+                <button aria-label="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+           <div class="menu-hamburger">
+                <img src="/Assets/Icons/menuHamb.png" alt="Abrir menu">
+                </div>
+          </div>
+
+        <nav class="menu container">
+            <a class="menu-item verde" href="/IEV-Repo-main/index.html"><i class="fa-solid fa-house"></i> Início</a>
+            <a class="menu-item azul" href="/Pages/quem-somos.html"><i class="fa-solid fa-users"></i> Quem Somos</a>
+            <a class="menu-item laranja" href="/Pages/servicos.html"><i class="fa-regular fa-heart"></i> Serviços</a>
+            <a class="menu-item vermelho" href="/Pages/projetos.html"><i class="fa-regular fa-newspaper"></i> Projetos</a>
+            <a class="menu-item verde2" href="/Pages/eventos.html"><i class="fa-regular fa-calendar-days"></i> Eventos</a>
+            <a class="menu-item azul2" href="/Pages/galeria.html"><i class="fa-regular fa-images"></i> Galeria</a>
+            <a class="menu-item azul3" href="/Pages/transparencia.html"><i class="fa-solid fa-handshake"></i> Transparência</a>
+            <a class="menu-item roxo" href="/Pages/como-ajudar.html"><i class="fa-solid fa-hand-holding-dollar"></i>Como Ajudar</a>
+            <a class="menu-item roxo2" href="/Pages/contato.html"><i class="fa-regular fa-comments"></i> Contato</a>
+    </header>
+
+
+<main class="transparencia-page">
+
+    <section class="titulo-transparencia">
+        <span class="mini-titulo">ACESSO À INFORMAÇÃO</span>
+        <h2>Portal da Transparência</h2>
+        <div class="linha-titulo"></div>
+        <p>
+            Consulte documentos, certidões, registros institucionais,
+            relatórios e informações sobre a atuação do Instituto Espaço Vida.
+        </p>
+    </section>
+
+    <section class="portal">
+
+        <aside class="menu-transparencia">
+
+            <div class="menu-titulo">
+                <i class="fa-solid fa-folder-open"></i>
+                <div>
+                    <span>PORTAL</span>
+                    <strong>Transparência</strong>
+                </div>
+            </div>
+
+            <button class="aba ativa" onclick="mostrarSecao('institucional', this)">
+                <i class="fa-solid fa-building"></i>
+                <span>Institucional</span>
+                <i class="fa-solid fa-chevron-right seta"></i>
+            </button>
+
+            <button class="aba" onclick="mostrarSecao('prestacao', this)">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <span>Prestação de Contas</span>
+                <i class="fa-solid fa-chevron-right seta"></i>
+            </button>
+
+            <div class="aviso-menu">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Selecione uma categoria para consultar os documentos.</p>
+            </div>
+        </aside>
+
+        <section class="documentos">
+
+            <div id="institucional" class="secao ativa-secao">
+
+                <div class="cabecalho-secao">
+                    <span>DOCUMENTOS INSTITUCIONAIS</span>
+                    <h2>Institucional</h2>
+                    <p>
+                        Informações e documentos que apresentam a estrutura,
+                        regularidade e atuação do Instituto Espaço Vida.
+                    </p>
+                </div>
+
+                <div class="grupo-documentos">
+                    <button class="grupo-titulo" onclick="toggleGrupo(this)">
+                        <span><i class="fa-solid fa-certificate"></i>Certidões</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="lista-documentos">
+                        <a href="#" class="documento"><div class="icone-pdf"><i class="fa-solid fa-file-pdf"></i></div><div class="documento-texto"><strong>Certidão Negativa de Débitos Relativos aos Tributos Federais e à Dívida Ativa da União</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-pdf"><i class="fa-solid fa-file-pdf"></i></div><div class="documento-texto"><strong>Certidão de Regularidade do FGTS</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-pdf"><i class="fa-solid fa-file-pdf"></i></div><div class="documento-texto"><strong>Certidão de Regularidade Fiscal</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-pdf"><i class="fa-solid fa-file-pdf"></i></div><div class="documento-texto"><strong>Certidão Negativa de Débitos Fiscais</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-pdf"><i class="fa-solid fa-file-pdf"></i></div><div class="documento-texto"><strong>Certidão Negativa de Débitos Trabalhistas</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-pdf"><i class="fa-solid fa-file-pdf"></i></div><div class="documento-texto"><strong>Certidão Positiva de Débitos com Efeito de Negativa</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                    </div>
+                </div>
+
+                <div class="grupo-simples">
+                    <a href="#" class="documento">
+                        <div class="icone-documento verde"><i class="fa-solid fa-file-lines"></i></div>
+                        <div class="documento-texto"><strong>Atas</strong><span>Atas institucionais</span></div>
+                        <i class="fa-solid fa-arrow-up-right-from-square abrir"></i>
+                    </a>
+                </div>
+
+                <div class="grupo-simples">
+                    <a href="#" class="documento">
+                        <div class="icone-documento azul"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <div class="documento-texto"><strong>Estatuto Social</strong><span>Documento institucional</span></div>
+                        <i class="fa-solid fa-arrow-up-right-from-square abrir"></i>
+                    </a>
+                </div>
+
+                <div class="grupo-documentos">
+                    <button class="grupo-titulo" onclick="toggleGrupo(this)">
+                        <span><i class="fa-solid fa-award"></i>Certificados</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="lista-documentos">
+                        <a href="#" class="documento"><div class="icone-documento verde"><i class="fa-solid fa-award"></i></div><div class="documento-texto"><strong>CMAS</strong><span>Certificado institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-documento azul"><i class="fa-solid fa-award"></i></div><div class="documento-texto"><strong>COMDICA</strong><span>Certificado institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-documento laranja"><i class="fa-solid fa-hospital"></i></div><div class="documento-texto"><strong>Licença de Funcionamento Sanitário</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-documento vermelho"><i class="fa-solid fa-fire-extinguisher"></i></div><div class="documento-texto"><strong>Declaração de Dispensa de Licenciamento do Corpo de Bombeiros</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                        <a href="#" class="documento"><div class="icone-documento azul"><i class="fa-solid fa-building"></i></div><div class="documento-texto"><strong>Alvará</strong><span>Documento institucional</span></div><i class="fa-solid fa-arrow-up-right-from-square abrir"></i></a>
+                    </div>
+                </div>
+
+                <div class="grupo-simples">
+                    <a href="#" class="documento">
+                        <div class="icone-documento laranja"><i class="fa-solid fa-chart-column"></i></div>
+                        <div class="documento-texto"><strong>Relatórios de Atividades</strong><span>Relatórios institucionais</span></div>
+                        <i class="fa-solid fa-arrow-up-right-from-square abrir"></i>
+                    </a>
+                </div>
+
+                <div class="grupo-simples">
+                    <a href="#" class="documento">
+                        <div class="icone-documento verde"><i class="fa-solid fa-list-check"></i></div>
+                        <div class="documento-texto"><strong>Plano de Ação</strong><span>Planejamento institucional</span></div>
+                        <i class="fa-solid fa-arrow-up-right-from-square abrir"></i>
+                    </a>
+                </div>
+
+                <div class="grupo-simples">
+                    <a href="#" class="documento">
+                        <div class="icone-documento azul"><i class="fa-solid fa-id-card"></i></div>
+                        <div class="documento-texto"><strong>CNPJ (Ficha)</strong><span>Cadastro institucional</span></div>
+                        <i class="fa-solid fa-arrow-up-right-from-square abrir"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="prestacao" class="secao">
+
+                <div class="cabecalho-secao">
+                    <span>TRANSPARÊNCIA FINANCEIRA</span>
+                    <h2>Prestação de Contas</h2>
+                    <p>
+                        Consulte documentos relacionados à prestação de contas
+                        e à aplicação dos recursos do Instituto Espaço Vida.
+                    </p>
+                </div>
+
+                <div class="prestacao-vazia">
+                    <div class="icone-prestacao">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Prestação de Contas</h3>
+                    <p>
+                        Os documentos de prestação de contas serão
+                        disponibilizados nesta seção.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <section class="mensagem-transparencia">
+        <div class="mensagem-icone">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+            <span>COMPROMISSO COM A TRANSPARÊNCIA</span>
+            <h2>Informação acessível, responsabilidade e confiança.</h2>
+            <p>
+                O Instituto Espaço Vida busca disponibilizar informações
+                institucionais de forma clara, organizada e acessível.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="rodape">
+        <div class="rodape-principal container">
+
+            <div class="footer-marca">
+                <img src="/Assets/Icons/iev-logo.png" alt="IEV">
+                <strong>INSTITUTO ESPAÇO VIDA<br>
+                    DE EDUCAÇÃO, SAÚDE E INCLUSÃO - IEV</strong>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <small>Rua Rutilio</small>
+                    <small>Pinheiro de Melo S/N</small>
+                    <small>Vitória - PE</small>
+                </div>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <small>Contato:</small>
+                    <strong>(81) 9.8494-3760</strong>
+                </div>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-regular fa-file-lines"></i>
+                <div>
+                    <small>CNPJ:</small>
+                    <strong>26.726.738/0001-24</strong>
+                </div>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/espacovidavitoria/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/5581984943760" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="frase-footer">
+                <strong>Juntos por<br>mais inclusão!</strong>
+                <span>♡</span>
+            </div>
+        </div>
+    </footer>   
+
+<script>
+function mostrarSecao(id, botao) {
+    document.querySelectorAll(".secao").forEach(secao => {
+        secao.classList.remove("ativa-secao");
+    });
+
+    document.querySelectorAll(".aba").forEach(aba => {
+        aba.classList.remove("ativa");
+    });
+
+    document.getElementById(id).classList.add("ativa-secao");
+    botao.classList.add("ativa");
+}
+
+function toggleGrupo(botao) {
+    botao.parentElement.classList.toggle("aberto");
+}
+</script>
+
+</body>
+</html>
