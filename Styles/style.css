@@ -23,7 +23,7 @@ body {
     font-family: "Poppins", Arial, sans-serif;
 
     background-image:
-        url('/Assets/Img/IevFundo.png'),
+        url('Assets/Img/IevFundo.png'),
         url('/Assets/Img/ievFundo2.png');
 
     background-size:
